@@ -1,0 +1,190 @@
+:root{
+    --border: 2vh solid black;
+}
+
+body{
+    background-color: beige;
+    margin: 0;
+    height: 140vh;
+}
+
+.container{
+    display : grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 100%;
+    height: 120vh;
+}
+
+.inner_container{
+    display: grid;
+    grid-template-columns: repeat(3, 30vh);
+    grid-template-rows: repeat(3, 30vh);
+    justify-content: center;
+    align-self: center;
+}
+
+.child:nth-child(1),
+.child:nth-child(2),
+.child:nth-child(3) {
+    border-bottom: var(--border);
+}
+
+.child:nth-child(7),
+.child:nth-child(8),
+.child:nth-child(9) {
+    border-top: var(--border);
+}
+
+.child:nth-child(1),
+.child:nth-child(4),
+.child:nth-child(7) {
+    border-right: var(--border);
+}
+
+.child:nth-child(3),
+.child:nth-child(6),
+.child:nth-child(9) {
+    border-left: var(--border);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 5vh;
+}
+
+.child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25vh;
+}
+
+#grid5::after{
+    background-color: red;
+    height: 1vh;
+    width: 0vh;
+    content: " ";
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+#grid5::before{
+    background-color: red;
+    height: 1vh;
+    width: 0vh;
+    content: " ";
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.hrzntl-strike-1{
+    position: absolute;
+    width: 0vh;
+    height: 1vh;
+    background-color: red;
+    left: 60vh;
+    top: 53.5vh;
+}
+
+.hrzntl-strike-2{
+    position: absolute;
+    width: 0vh;
+    height: 1vh;
+    background-color: red;
+    left: 60vh;
+    top: 83.5vh;
+}
+
+.hrzntl-strike-3{
+    position: absolute;
+    width: 0vh;
+    height: 1vh;
+    background-color: red;
+    left: 60vh;
+    top: 113.5vh;
+}
+
+#grid1::after{
+    width: 1vh;
+    height: 0vh;
+    content: " ";
+    background-color: red;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+#grid2::after{
+    width: 1vh;
+    height: 0vh;
+    content: " ";
+    background-color: red;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+#grid3::after{
+    width: 1vh;
+    height: 0vh;
+    content: " ";
+    background-color: red;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+.hrzntl-animation{
+    animation: forwards slidein 1.5s ease-in-out ;
+}
+
+@keyframes slidein {
+    0%{
+        width: 0vh;
+    }
+
+    100%{
+        width: 90vh;
+    }
+}
+
+.vrtcl-animation{
+    animation: forwards slideinv 1.5s ease-in-out;
+}
+
+@keyframes slideinv {
+    0%{
+        width: 0vh;
+    }
+
+    100%{
+        width: 90vh;
+    }
+}
+
+.diagonal-animation{
+    animation: forwards slideind 1.5s ease-in-out;
+}
+
+@keyframes slideind{
+    0%{
+        width: 0vh;
+    }
+
+    100%{
+        width: 115.3vh;
+    }
+}
+
+.xo-hover{
+    font-family: 'roboto', sans-serif;
+    opacity: 60%;
+    font-size: 25vh;
+}
