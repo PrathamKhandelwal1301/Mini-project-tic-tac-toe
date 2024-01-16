@@ -64,11 +64,6 @@ h1{
     justify-content: center;
 }
 
-h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 25vh;
-}
-
 #grid5::after{
     background-color: red;
     height: 1vh;
@@ -187,4 +182,26 @@ h2{
     font-family: 'roboto', sans-serif;
     opacity: 60%;
     font-size: 25vh;
+}
+
+.x{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25vh;
+    font-weight: bold;
+}
+
+.o{
+    font-family: 'roboto', sans-serif;
+    font-size: 25vh;
+    font-weight: bold;
+}
+
+.popup{
+    background-color: black;
+    height: 40vh;
+    width: 50vw;
+    position: absolute;
+    top: 64vh;
+    left: 25vw;
+    visibility: hidden;
 }
